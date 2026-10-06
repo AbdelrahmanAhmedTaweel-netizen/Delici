@@ -224,6 +224,10 @@ font-size: 14px;
      #Contact .box{
         width: 350px;
     }
+    .popup[data-popup-name="details"] .content{
+    width: 65%;
+    margin: auto;
+}
 }
 
 @media (min-width: 769px) and (max-width: 1300px) {
