@@ -35,6 +35,7 @@
 .popup[data-popup-name="details"] .content{
     width: 100%;
     margin: auto;
+    padding: 25px;
 }
 .popup[data-popup-name="details"] .content h2{
     font-size: 25px;
