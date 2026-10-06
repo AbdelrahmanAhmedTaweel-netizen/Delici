@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delici</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#Home" class="active">Home</a></li>
+                    <li><a href="#About">About US</a></li>
+                    <li><a href="#Story">Our Story</a></li>
+                    <li><a href="#Special">Special Dish</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#Chefs">Our Chefs</a></li>
+                    <li><a href="#Contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="button" onclick="openPupup ('navbar')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <header class="vh-100" id="Home">
+        <div class="sc-carousel h-100">
+            <div class="sc-carousel-inner h-100">
+                <div class="sc-carousel-item vh-100 active">
+                    <div class="container">
+                        <div class="sc-carousel-caption ">
+                        <div class="title">
+                            <h4>DELIGHTFUL EXPERIENCE</h4>
+                            <img src="images/separator.svg" class="img-fluid" alt="">
+                        </div>
+                        <h1>Flavors Inspired By</h1>
+                        <h1>The Seasons</h1>
+                        <p>Come with family & feel the joy of mouthwatering food</p>
+                        <a href="#Menu" class="btn mainButton mt-4"><span>VIEW OUR MENU</span></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="sc-carousel-item vh-100">
+                    <div class="container">
+                        <div class="sc-carousel-caption ">
+                        <div class="title">
+                            <h4>AMAZING & DELICIOUS</h4>
+                            <img src="images/separator.svg" class="img-fluid" alt="">
+                        </div>
+                        <h1>Where Every Flavor</h1>
+                        <h1>Tells A Story</h1>
+                        <p>Come with family & feel the joy of mouthwatering food</p>
+                        <a href="#Menu" class="btn mainButton mt-4"><span>VIEW OUR MENU</span></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="sc-carousel-item vh-100">
+                    <div class="container">
+                        <div class="sc-carousel-caption ">
+                        <div class="title">
+                            <h4>TRADATIONAL & HYGINE</h4>
+                            <img src="images/separator.svg" class="img-fluid" alt="">
+                        </div>
+                        <h1>For The Love Of</h1>
+                        <h1>Delicious Food</h1>
+                        <p>Come with family & feel the joy of mouthwatering food</p>
+                        <a href="#Menu" class="btn mainButton mt-4"><span>VIEW OUR MENU</span></a>
+                        </div>
+                    </div>
+                </div>
+                <button class=" next"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class=" prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="book" onclick="openPupup('book') ">
+                    <img src="images/book-icon-1.png" alt="">
+                    <p class="mb-0 fw-light">Book A </p>
+                    <p class="mb-0 fw-light">Table</p>
+                </div>
+                <div class="indecators">
+                    <ul class="list-unstyled">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="About" class="py-5 position-relative">
+            <img src="images/bg-1.png" alt="" class="img-fluid position-absolute img-right">
+            <img src="images/bg-2.png" class="img-fluid position-absolute img-left" alt="">
+        <div class="container">
+            <div class="title">
+                <h4>DELIGHTFUL EXPERIENCE</h4>
+                <img src="images/separator.svg" class="img-fluid" alt="">
+            </div>
+            <div class="content">
+                <h1 class="py-3">We Offer Top Notch</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys standard dummy text ever.</p>
+            </div>
+            <div class="row px-3 ">
+            <div class="box col-lg-4">
+                <div class="item">
+                    <div class="img">
+                    <img class="img-fluid img1" src="images/pattern-8.svg" alt="">
+                    <img src="images/offer-image-1.jpg" class="img-fluid img2" alt="">
+                    </div>
+                    <h3>Breakfast</h3>
+                    <div class="button d-flex align-content-center">
+                        <a href="#Menu" class="btn">VIEW MENU</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box col-lg-4">
+                <div class="item">
+                    <div class="img">
+                    <img class="img-fluid img1" src="images/pattern-8.svg" alt="">
+                    <img src="images/offer-image-1.jpg" class="img-fluid img2" alt="">
+                    </div>
+                    <h3>Appetizers</h3>
+                    <div class="button d-flex align-content-center">
+                        <a href="#Menu" class="btn">VIEW MENU</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box col-lg-4">
+                <div class="item">
+                    <div class="img">
+                    <img class="img-fluid img1" src="images/pattern-8.svg" alt="">
+                    <img src="images/offer-image-1.jpg" class="img-fluid img2" alt="">
+                    </div>
+                    <h3>Drinks</h3>
+                    <div class="button d-flex align-content-center">
+                        <a href="#Menu" class="btn">VIEW MENU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+    <section id="Story">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 box1">
+                    <div class="item">
+                        <div class="title">
+                            <h4>OUR STORY</h4>
+                            <img src="images/separator.svg" class="img-fluid" alt="">
+                        </div>
+                        <h2>Every Flavor Tells</h2>
+                        <h2>A Story</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into.</p>
+                        <h5>Book Through Call</h5>
+                        <a href="tel:+20-102-108-0042" class="btn tel">+20-102-108-0042</a>
+                        <div class="button">
+                            <a class="btn mainButton"><span>Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 box2">
+                    <div class="item">
+                        <img src="images/image-1.jpg" class="img" alt="">
+                        <img src="images/badge-1.png" class="img-fluid img-right" alt="">
+                        <img src="images/badge-1-bg.png" class="img-fluid img-center" alt="">
+                        <img src="images/pattern-8.svg" class="img-fluid img-bottom1" alt="">
+                        <img src="images/image-2.jpg" class="img-fluid img-bottom2" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Special">
+        <div class="row">
+            <div class="col-md-6 box1">
+                <div class="item">
+                </div>
+            </div>
+            <div class="col-md-6 box2">
+                <div class="item">
+                    <img src="images/badge-2.png" class="icon" alt="">
+                    <div class="title">
+                        <h4>SPECIAL DISH</h4>
+                        <img src="images/separator.svg" class="img-fluid " alt="">
+                    </div>
+                    <h2>Lobster Tortellini</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type.</p>
+                    <div class="price">
+                        <h5 class="p1"><s>$40.00</s></h5>
+                        <h4 class="p2">$20.00</h4>
+                    </div>
+                    <div class="button">
+                        <a class="btn mainButton" href="#Menu"><span>VIEW ALL MENU</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Menu">
+        <img src="images/bg-1.png" alt="" class="img-fluid position-absolute img-right">
+        <img src="images/bg-2.png" class="img-fluid position-absolute img-left" alt="">
+        <div class="container">
+            <div class="title">
+                <h4>SPECIAL SELECTION</h4>
+                <img src="images/separator.svg" class="img-fluid " alt="">
+            </div>
+            <h2>Delicious Menu</h2>
+            <ul class="nav nav-pills mb-5  align-items-center mt-3 bg-transparent text-light" id="pills-tab" role="tablist">
+                <li class="nav-item active" role="presentation">
+                    <button class="nav-link active bg-transparent text-light" id="pills-BreakFast-tab" data-bs-toggle="pill" data-bs-target="#pills-BreakFast" type="button" role="tab" aria-controls="pills-BreakFast" aria-selected="true">Break Fast</button>
+                    <span></span>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-light" id="pills-Lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-Lunch" type="button" role="tab" aria-controls="pills-Lunch" aria-selected="false">Lunch</button>
+                    <span></span>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-light" id="pills-Dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-Dinner" type="button" role="tab" aria-controls="pills-Dinner" aria-selected="false">Dinner</button>
+                    <span></span>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link bg-transparent text-light" id="pills-Drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-Drinks" type="button" role="tab" aria-controls="pills-Drinks" aria-selected="false">Drinks</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-BreakFast" role="tabpanel" aria-labelledby="pills-BreakFast-tab" tabindex="0">
+                    <div class="row  ">
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-Lunch" role="tabpanel" aria-labelledby="pills-Lunch-tab" tabindex="0">
+                     <div class="row  ">
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-Dinner" role="tabpanel" aria-labelledby="pills-Dinner-tab" tabindex="0">
+                    <div class="row  ">
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-Drinks" role="tabpanel" aria-labelledby="pills-Drinks-tab" tabindex="0">
+                    <div class="row  ">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Chefs" >
+        <div class="container">
+            <div class="title">
+                <h4>EXPERIENCED TEAM</h4>
+                <img src="images/separator.svg" class="img-fluid" alt="">
+            </div>
+            <h2 class="text-center text-light py-3">Meet Our Chef</h2>
+            <div class="row">
+                <div class="col-md-4 box">
+                    <div class="item">
+                        <div class="photo">
+                            <img src="images/chef-1.jpg" class="img-fluid" alt="">
+                            <div class="layout">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3>Willium Joe</h3>
+                        <span>MASTER CHEF</span>
+                        <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 box">
+                    <div class="item">
+                            <div class="photo">
+                            <img src="images/chef-2.jpg" class="img-fluid" alt="">
+                            <div class="layout">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <h3>Steave Den</h3>
+                    <span>MASTER CHEF</span>
+                    <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-4 box">
+                    <div class="item">
+                            <div class="photo">
+                            <img src="images/chef-3.png" class="img-fluid" alt="">
+                            <div class="layout">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    <h3>Oliver Joe</h3>
+                    <span>MASTER CHEF</span>
+                    <p>Lorem Ipsum is simply dummy printing and typeset industry lorem Ipsum has been the industrys.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="box">
+            <div class="head">
+                <img src="images/logo.png" alt="">
+                <p><i class="fa-solid fa-location-dot"></i>
+                Delicious City, London 9578, UK</p>
+                <p><i class="fa-regular fa-clock"></i>
+                Daily : 8.00 am to 10.00 pm</p>
+                <p><i class="fa-regular fa-envelope"></i>
+                booking@restaurant.com</p>
+                <div class="icons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="body">
+                <form>
+                    <div class="inputs">
+                        <input type="text" placeholder="Name..." required name="name">
+                        <input type="email" placeholder="Email..." required name="email">
+                    </div>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    
+                </form>
+                <a href="#" class="btn mainButton w-100 mt-3"><span>Send Message</span></a>
+            </div>
+        </div>
+        <footer>
+        <p class="mb-0">© 2023 Restaurant. All Rights Reserved | Created by <span>SemiCode</span></p>
+        </footer>
+    </section>
+
+    <div class="popup" data-popup-name="navbar" onclick="closePupup('navbar')">
+        <div class="box">
+            <i class="fa-regular fa-circle-xmark sideBarExit" onclick="closePupup('navbar') "></i>
+            <div class="logo">
+                <img src="images/logo.png" class="img-fluid" alt="">
+            </div>
+            <div class="head">
+                <img src="images/sidebar-image.jpg" class="img-fluid rounded-circle" alt="">
+            </div>
+            <div class="links">
+                <ul class="list-unstyled ">
+                    <li><a href="#Home" class="active">Home</a></li>
+                    <li><a href="#About">About US</a></li>
+                    <li><a href="#Story">Our Story</a></li>
+                    <li><a href="#Special">Special Dish</a></li>
+                    <li><a href="#Menu">Menu</a></li>
+                    <li><a href="#Chefs">Our Chefs</a></li>
+                    <li><a href="#Contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Visit Us</h2>
+                <p><i class="fa-solid fa-location-dot"></i>
+                Delicious City, London 9578, UK</p>
+                <p><i class="fa-regular fa-clock"></i>
+                Daily : 8.00 am to 10.00 pm</p>
+                <p><i class="fa-regular fa-envelope"></i>
+                booking@restaurant.com</p>
+                <span></span>
+                <p class="text">Booking Request</p>
+                <a href="tel:+201021080042">+20-102-108-0042</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-popup-name="book" onclick="closePupup('book')">
+        <div class="part">
+            <div class="head">
+                <i class="fa-regular fa-circle-xmark exit" onclick="closePupup('book')"></i>
+                <div class="title">
+                <h4>RESERVATION</h4>
+                <img src="images/separator.svg" class="img-fluid" alt="">
+            </div>
+            <h2>Book A Table</h2>
+            <p>Restaurant will be open for all days, Sunday night will be closed, All booking payment is secured with credit card, no charges will be aplly for online booking. no refundable.</p>
+            <p>Booking request <a href="tel:+20-102-108-0042">+20-102-108-0042</a> or fill out the order form</p>
+            </div>
+            <div class="body">
+                <form class="mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <input type="text" placeholder="Reservation Name..." required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <input type="text" placeholder="Phone Number..." required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <input type="number" placeholder="Seats..." required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <input type="datetime-local"  required>
+                            </div>
+                        </div>
+                        <textarea name="Message" placeholder="Notes Message"></textarea>
+                        <a href="#" class="btn mainButton w-50 m-auto"><span>Book A Table</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-popup-name="details" onclick="closePupup('details')">
+        <div class="content" onclick="event.stopPropagation()">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

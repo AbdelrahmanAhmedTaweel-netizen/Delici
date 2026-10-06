@@ -1,0 +1,40 @@
+@keyframes animate-1{
+    from{
+        transform: rotate(45deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-2 {
+    0% {
+        width: 35px
+    }
+
+    50% {
+        width: 20px
+    }
+
+    to {
+        width: 35px
+    }
+}
+
+@keyframes animate-3{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(30px);
+    }
+}
+
+@keyframes animate-4{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

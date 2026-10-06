@@ -1,0 +1,407 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Forum", serif;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --mainColor: #e4c590;
+    --Color1: #0e0d0c;
+    --Color2: #171819;
+    --color3: #a7a7a7;
+}
+ .title{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+ .title h4{
+    color: var(--mainColor);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+ .title img{
+    width: 100px;
+}
+.mainButton{
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    padding: 15px 40px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+.mainButton::after,
+.mainButton::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: #e4c590;
+    position: absolute;
+    transition-duration: .5s;
+}
+.mainButton::after{
+    top: -50%;
+    left: 0;
+}
+.mainButton::before{
+    bottom: -50%;
+    left: 0;
+}
+.mainButton:hover:after{
+    top: 0;
+}
+.mainButton:hover:before{
+    bottom: 0%;
+}
+.mainButton:hover span{
+    color: var(--Color1);
+    position: relative;
+    z-index: 2;
+} 
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:20;
+    background-color: #e4c59080;
+    justify-content: flex-start;
+    display: none;
+    transition-duration: .5s;
+}
+.popup.active{
+    display: flex;
+}
+.popup .box{
+    background-image: url("../images/bg.png");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    position: relative;
+    scrollbar-width: none;
+    overflow-y: auto;
+    padding-bottom: 40px;
+    opacity: 0;
+    left: -100%;
+    transition-duration: .5s;
+}
+.popup.show .box{
+    opacity: 1;
+    left: 0%;
+}
+.popup .box i.sideBarExit{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor:  pointer;
+}
+.popup .box .logo{
+    margin:40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup .box .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup .box .head img{
+    width: 150px;
+    margin: auto;
+}
+.popup .box .links{
+    width: 300px;
+    margin: auto;
+}
+.popup .box .links ul {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.popup .box .links ul li{
+    width: 200px;
+    margin: auto;
+    text-align: start;
+    border-top: 1px solid var(--color3);
+    border-bottom: 1px solid var(--color3);
+    padding: 10px 0px;
+}
+.popup .box .links ul li a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    transition-duration: .5s;
+    position: relative;
+}
+
+.popup .box .links ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--mainColor);
+    transform:  rotate(45deg);
+    opacity: 0;
+    transition-duration: .5s;
+    animation-name: animate-1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    text-align: start;
+}
+
+.popup .box .links ul li a.active{
+    color: var(--mainColor);
+    padding: 20px 20px;
+}
+
+.popup .box .links ul li a.active::before{
+    opacity: 1;
+}
+
+.popup .box .links ul li a:hover{
+    color: var(--mainColor);
+}
+.popup .box .content {
+    text-align: center;
+}
+.popup .box .content h2{
+    color: white;
+}
+.popup .box .content p{
+    color: var(--color3);
+}
+.popup .box .content span{
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--mainColor);
+    display: block;
+    margin: auto;
+    transform: rotate(45deg);
+    animation-name: animate-1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.popup .box .content p.text{
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+.popup .box .content a{
+    text-decoration: none;
+    color: var(--mainColor);
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 5px;
+}
+.popup .box .content a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    border-top: 1px solid var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
+    transition-duration: .5s;
+    
+}
+.popup .box .content a:hover::after{
+    width: 100%;
+    left: 0%;
+}
+
+.popup[data-popup-name="book"]{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:20;
+    background-color: #e4c59080;
+    display: none;
+    padding: 40px;
+    overflow-y: auto;
+}
+.popup[data-popup-name="book"].active{
+    display: block;
+}
+.popup[data-popup-name="book"] .part {
+    background-color: var(--Color2);
+    width: 600px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-200%);
+    transition-duration: 1s;
+}
+.popup[data-popup-name="book"].show .part{
+    opacity: 1;
+    transform: translateY(0%);
+} 
+.popup[data-popup-name="book"] .head {
+    margin-bottom: 20px;
+}
+.popup[data-popup-name="book"] .exit {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.popup[data-popup-name="book"] h2 {
+    color: white;
+    font-size: 40px;
+    padding: 15px 0px;
+}
+.popup[data-popup-name="book"] p {
+    color: var(--color3);
+}
+.popup[data-popup-name="book"] p a {
+    color: var(--mainColor);
+    text-decoration: none;
+}
+.popup[data-popup-name="book"] .part input{
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #a7a7a7;
+    color: #a7a7a7;
+}
+.popup[data-popup-name="book"] .part textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 8px 12px;
+    margin: 20px 0px;
+    background-color: transparent;
+    color: #a7a7a7;
+    border-radius: 5px;
+}
+.popup[data-popup-name="details"]{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: #e4c59080;
+    display: none;
+    padding: 40px;
+    overflow-y: auto;
+    transition-duration: .5s;
+}
+.popup[data-popup-name="details"].active{
+    display: block;
+}
+.popup[data-popup-name="details"] .content{
+    background-color: var(--Color2);
+    width: 600px;
+    max-width: 90%;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-200%);
+    transition-duration: 1s;
+}
+.popup[data-popup-name="details"].show .content{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.popup[data-popup-name="details"] .content  i.exit{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.popup[data-popup-name="details"] .content h2{
+    color: white;
+    font-size: 40px;
+    margin: 20px 0;
+}
+.popup[data-popup-name="details"] .content .photo{
+    position: relative;
+}
+.popup[data-popup-name="details"] .content .photo img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.popup[data-popup-name="details"] .content .photo .price{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #e4c590;
+    color: white;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 8px 0 0 8px;
+}
+
+
+.popup[data-popup-name="details"] .content .photo .prev,
+.popup[data-popup-name="details"] .content .photo .next{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #e4c590;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(45deg);
+}
+.popup[data-popup-name="details"] .content .photo .prev{
+    left: 30px;
+ }
+.popup[data-popup-name="details"] .content .photo .next{ 
+    right: 30px; 
+}
+
+.popup[data-popup-name="details"] .content .photo .prev i,
+.popup[data-popup-name="details"] .content .photo .next i{
+    transform: rotate(-45deg);
+    color: white;
+}
+.popup[data-popup-name="details"] .content p{
+    color: #a7a7a7;
+    margin-top: 20px;
+    text-align: start;
+    font-size: 15px;
+    line-height: 1.5;
+}
