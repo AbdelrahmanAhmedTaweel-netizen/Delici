@@ -19,45 +19,6 @@
 .next , .prev{
     display: none;
 }
-.popup[data-popup-name="navbar"] .box{
-    width: 300px;
-}
-.popup[data-popup-name="book"] .part{
-    width: 100%;
-}
-.popup[data-popup-name="book"] h2{
-    font-size: 25px;
-}
-.popup[data-popup-name="book"] .row a{
-    font-size: 12px;
-    width: 80% !important;
-}
-.popup[data-popup-name="details"] .content{
-    width: 100%;
-    margin: auto;
-    padding: 25px;
-}
-.popup[data-popup-name="details"] .content h2{
-    font-size: 25px;
-}
-.popup[data-popup-name="details"] .content .photo .price{
-    top: 15px;
-    padding: 5px 8px;
-    font-size: 14px;
-}
-.popup[data-popup-name="details"] .content .photo .prev,
-.popup[data-popup-name="details"] .content .photo .next{
-    position: absolute;
-    top: 60%;
-    width: 30px;
-    height: 30px;
-}
-.popup[data-popup-name="details"] .content .photo .prev{
-    left: 20px;
- }
-.popup[data-popup-name="details"] .content .photo .next{ 
-    right: 20px; 
-}
     #About .content p{
     width: 90%;
     text-align: center;
@@ -95,18 +56,18 @@ font-size: 14px;
     translate: 30% -50%;    
 }
 #Story .box2 .item .img-bottom1{
-    width: 80px;
-    position: absolute;
-    bottom:20% ;
-    right:70%;
-    transform: translate(-30% , 50%);
+        width: 80px;
+        position: absolute;
+        bottom: 20%;
+        right: 70%;
+        transform: translate(40%, 50%);
 }
 #Story .box2 .item .img-bottom2{
     position: absolute;
     bottom: 20%;
     right: 70%;
-    width: 200px;
-    transform: translate(20% ,50%);
+    width: 170px;
+    transform: translate(40%, 50%);
 }
 
     #Special .box2 .item{
@@ -174,6 +135,50 @@ font-size: 14px;
 #Contact .box .body a{
     font-size: 12px;
 }
+.popup[data-popup-name="navbar"] .box{
+    width: 300px;
+}
+.popup[data-popup-name="book"] .part{
+    width: 100%;
+}
+.popup[data-popup-name="book"] h2{
+    font-size: 25px;
+}
+.popup[data-popup-name="book"] .row a{
+    font-size: 12px;
+    width: 80% !important;
+}
+.popup[data-popup-name="details"] .content{
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+}
+.popup[data-popup-name="details"] .content h2{
+    font-size: 25px;
+}
+
+
+.popup[data-popup-name="details"] .content .photo .price{
+    top: 15px;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+.popup[data-popup-name="details"] .content .photo .prev,
+.popup[data-popup-name="details"] .content .photo .next{
+    position: absolute;
+    top: 60%;
+    width: 30px;
+    height: 30px;
+}
+.popup[data-popup-name="details"] .content .photo .prev{
+    left: 20px;
+ }
+.popup[data-popup-name="details"] .content .photo .next{ 
+    right: 20px; 
+}
+#Contact footer p{
+    font-size: 15px;
+}
 }
 
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -199,7 +204,7 @@ font-size: 14px;
 }
     #Special .box2 .item{
     padding: 30px 0px;
-    width: 450px;
+    width: 250px;
     margin: auto;
 }
     #Menu .nav.nav-pills{
@@ -257,10 +262,7 @@ font-size: 14px;
 #Contact .box .body a{
     font-size: 15px;
 }
-.popup[data-popup-name="details"] .content{
-    width: 80%;
-    margin: auto;
-}
+
 .popup[data-popup-name="details"] .content .photo .prev,
 .popup[data-popup-name="details"] .content .photo .next{
     width: 40px;
